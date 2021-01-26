@@ -45,8 +45,8 @@
               {{#if section.isPact}}
               <span class="spell-detail spell-slots">
                 <input type="text" data-target="data.spells.spell{{lvl}}.value" value="{{section.value}}" placeholder="0"/>
-                /
-                <input class="spell-max" type="text" data-target="data.spells.spell{{lvl}}.override" value="{{section.max}}" placeholder="0"/>
+                <span class="sep"> / </span>
+                <span class="spell-max">{{section.max}}</span>
               </span>
               {{else}}
               <!-- <span class="spell-slots">
@@ -83,7 +83,7 @@
                 <span class="spell-detail spell-slots">
                   <input type="text" data-target="data.spells.spell{{lvl}}.value" value="{{section.value}}" placeholder="0" data-dtype="Number"/>
                   <span class="sep"> / </span>
-                  <input class="spell-max" type="text" data-target="data.spells.spell{{lvl}}.override" value="{{section.max}}" placeholder="0" data-dtype="Number"/>
+                  <span class="spell-max">{{section.max}}</span>
                 </span>
               {{/if}}
             </div>
