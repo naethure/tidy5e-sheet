@@ -208,10 +208,10 @@ export const tidy5eSettings = function () {
 		config: true,
 		type: String,
 		choices: {
-			"default": game.i18n.localize("TIDY5E.Settings.SheetTheme.default"),
+			"light": game.i18n.localize("TIDY5E.Settings.SheetTheme.default"),
 			"dark": game.i18n.localize("TIDY5E.Settings.SheetTheme.dark")
 		},
-		default: 'default',
+		default: 'dark',
 		onChange: data => {
       data === 'dark' ? document.body.classList.add("tidy5eDark"):document.body.classList.remove("tidy5eDark");
      }

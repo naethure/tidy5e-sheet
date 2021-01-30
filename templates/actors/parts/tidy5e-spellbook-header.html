@@ -8,7 +8,7 @@
     <li class="filter-item" data-filter="concentration">{{localize 'DND5E.AbbreviationConc'}}</li>
     <li class="filter-item" data-filter="non-concentration">Non-{{localize 'DND5E.AbbreviationConc'}}</li>
     <li class="filter-item" data-filter="ritual">{{localize 'DND5E.Ritual'}}</li>
-    <li class="filter-item" data-filter="prepared">{{localize 'DND5E.Prepared'}}{{#if preparedSpells}} ({{preparedSpells}}){{/if}}</li>
+    <li class="filter-item active" data-filter="prepared">{{localize 'DND5E.Prepared'}}{{#if preparedSpells}} ({{preparedSpells}}){{/if}}</li>
     {{#if owner}}
     <li class="toggle-layout inventory-layout spellbook-layout"><i class="fas fa-th-large toggle-grid" title="{{localize 'TIDY5E.GridLayout'}}"></i><i class="fas fa-th-list toggle-list" title="{{localize 'TIDY5E.ListLayout'}}"></i></li>
     {{/if}}
